@@ -2,8 +2,21 @@ package contas;
 
 public class Conta {
     //atributos
-    protected String cliente;
-    protected double saldo;
+    private String cliente;
+    public String getCliente(){
+        return cliente;
+    }
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
+    }
+    private double saldo;
+    public double getSaldo() {
+        return saldo;
+    }
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
     public Conta(){
         System.out.println("Agência 0261");
     }
